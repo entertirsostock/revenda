@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
- <meta charset="UTF-8">
- <title>Portal Revenda</title>
- <style>
- body { font-family: sans-serif; text-align: center; padding: 50px; background:
-#f4f7f6; }
- .card { display: inline-block; width: 200px; padding: 30px; margin: 15px;
-background: white;
- border-radius: 10px; text-decoration: none; color: #333; box-shadow: 0
-2px 5px rgba(0,0,0,0.1); }
- .card:hover { background: #007bff; color: white; }
- </style>
+    <meta charset="UTF-8">
+    <title>Revenda de Peças - Painel Principal</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        /* O MENU DE LIGAÇÃO */
+        nav { background: #24292e; padding: 15px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #0366d6; }
+        .container { padding: 40px; text-align: center; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body>
- <h1>Gestão de Stock & Reparações</h1>
- <a href="apple-menu.html" class="card"><h2>APPLE</h2></a>
- <a href="samsung-menu.html" class="card"><h2>SAMSUNG</h2></a>
- <a href="reparacoes.html" class="card"><h2>REPARAÇÕES</h2></a>
+
+    <!-- ISTO É O QUE LIGA AS PÁGINAS -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="apple.html">Ecrãs Apple</a>
+        <a href="samsung.html">Ecrãs Samsung</a>
+        <a href="baterias.html">Baterias</a>
+    </nav>
+
+    <div class="container">
+        <h1>Gestão de Stock & Revenda</h1>
+        <p>Escolha uma categoria abaixo para ver os preços atualizados:</p>
+        
+        <div class="card-grid">
+            <div class="card">
+                <h3>Apple</h3>
+                <a href="apple.html">Ver Tabelas</a>
+            </div>
+            <div class="card">
+                <h3>Samsung</h3>
+                <a href="samsung.html">Ver Tabelas</a>
+            </div>
+            <div class="card">
+                <h3>Baterias</h3>
+                <a href="baterias.html">Ver Tabelas</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
